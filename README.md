@@ -14,7 +14,7 @@ Kaggle given us the ultrasound images and mask images of the location of the ner
 
 ## Image processing
 
-By eye balling the training images and masks, no image augmentation is needed since the nerve structures are at similar locations in ultrasound images and have similar shapes. Need to resize images (I choose 128 x 128) to conserve memory and use GPU.
+By eye balling the training images and masks, no image augmentation is needed since the nerve structures are at similar locations in ultrasound images and have similar shapes. Need to resize images (I choose 128 x 128) to conserve memory.
 
 ## Modeling
 
