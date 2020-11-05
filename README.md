@@ -9,6 +9,7 @@ The goal of this challenge is to build a model to identify the nerve structures 
 Motivation bahind the challenge is to improve pain management through the use of indwelling catheters on the neck, thus accurately identifying the nerve structures on patient's nack is a critical step to effectively insert a catheter.
 
 Kaggle given us the ultrasound images and mask images of the location of the nerve system: (animation is from [Kaggle notebook](https://www.kaggle.com/chefele/animated-images-with-outlined-nerve-area))
+
 <img src="images/patient-32.gif" width="400">
 <img src="images/patient-41.gif" width="400">
 
