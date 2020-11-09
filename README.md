@@ -24,7 +24,7 @@ I use the U-Net architect with less kernels and dice coefficient as metrics for 
 
 ## Result
 
-Here are the predicted masks and true masks comparison after 30 epochs of training:
+Final model can **predict the core area of nerve structure in images and cover 62% based on dice coefficient metrics**. Here are the predicted masks and true masks comparison after 30 epochs of training:
 <img src="images/patient-41_30.gif">
 <img src="images/patient-34_30.gif">
 <img src="images/patient-26_30.gif">
