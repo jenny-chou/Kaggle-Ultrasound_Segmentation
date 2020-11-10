@@ -53,7 +53,7 @@ def dice_coef_loss(y_true, y_pred):
     Returns: scalar to evaluate training
 
     """
-    return 1-dice_coef(y_true, y_pred)
+    return -dice_coef(y_true, y_pred)
 
 def iou(y_true, y_pred):
     """Intersection over union as metrics.
@@ -239,7 +239,7 @@ def run_len_encoding(img):
     
     return " ".join(encoded_img)
 
-def predict_test(model, imgs, fnames):
+def predict_mask(model, imgs, fnames):
     """Predict masks for test images.
 
     Args:
@@ -266,7 +266,7 @@ def predict_test(model, imgs, fnames):
     return pred
 
 
-def train_n_pred():
+def main():
     """Train U-Net model with training and validation datasets
     and make prediction on test images.
     """
@@ -309,7 +309,7 @@ def train_n_pred():
     epochs = 30
     batch_size = 32
     history = model.fit(train_imgs, train_masks, epochs=epochs, 
-                        batch_size=batch_size, shuffle=True, random_state=7,                        
+                        batch_size=batch_size, shuffle=True,                        
                         validation_data=(valid_imgs, valid_masks), 
                         callbacks=[checkpoint])
     
@@ -323,10 +323,10 @@ def train_n_pred():
     model.load_weights("best_weight.h5")
     
     # Predict masks for test data
-    test_masks_pred = predict_test(model, test_imgs, test_fnames)
+    test_masks_pred = predict_mask(model, test_imgs, test_fnames)
     test_masks_pred.to_csv("test_masks_pred.csv", index=False)
 
 
 if __name__ == '__main__':
-    train_n_pred()
+    main()
     
