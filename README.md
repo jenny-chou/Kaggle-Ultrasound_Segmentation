@@ -1,6 +1,6 @@
 # Kaggle-Ultrasound_Segmentation
  
-This project is solution to Kaggle competition: [Ultrasound Nerve Segmentation](https://www.kaggle.com/c/ultrasound-nerve-segmentation/overview)
+This project is a solution to Kaggle competition: [Ultrasound Nerve Segmentation](https://www.kaggle.com/c/ultrasound-nerve-segmentation/overview)
 
 ## Challenge
 
@@ -18,7 +18,7 @@ By eye balling the training images and masks, no image augmentation is needed si
 
 ## Modeling
 
-I use the U-Net architect with less kernels and dice coefficient as metrics for my segmentation model:
+I use the **U-Net** architect with less kernels and dice coefficient as metrics for my segmentation model:
 <img src="images/model.png">
 
 ## Result
