@@ -24,7 +24,7 @@ I use the U-Net architect with less kernels and dice coefficient as metrics for 
 
 ## Result
 
-The final model can **predict the core area of nerve structure in images and cover 62% true masks** based on dice coefficient metrics. The model can even **identify the target while ultrasound probe moves**, which during the transition the images are shaky and difficult to label manually. Here are the predicted masks (blue) and true masks (red) after 30 epochs of training:
+Following GIF images show the predicted masks (blue) and true masks (red) after 30 epochs of training. The final model can **predict the core area of nerve structure and cover 62% of the true masks** based on dice coefficient metrics. The model can even **identify the target while ultrasound probe moves**, which during the transition the images are shaky and difficult to label manually. Some predictions have noise but the target location has the biggest mask area.
 
 <img src="images/patient-41_30.gif">
 <img src="images/patient-34_30.gif">
