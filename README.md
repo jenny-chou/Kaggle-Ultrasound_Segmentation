@@ -1,3 +1,5 @@
+<img src="https://essexultrasound.co.uk/wp-content/uploads/2019/04/GettyImages-123725720.jpg">
+
 # Kaggle-Ultrasound_Segmentation
  
 This project is a solution to Kaggle competition: [Ultrasound Nerve Segmentation](https://www.kaggle.com/c/ultrasound-nerve-segmentation/overview)
