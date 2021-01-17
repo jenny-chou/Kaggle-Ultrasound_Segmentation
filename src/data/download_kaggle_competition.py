@@ -5,7 +5,7 @@ from pathlib import Path
 import kaggle
 
 @click.command()
-@click.option('--competition', prompt='Enter Kaggle competition name')
+@click.option('--competition', prompt='Enter Kaggle competition name: ')
 @click.option('--output_filepath', default='../../data/raw')
 def main(competition):
     """ Runs data processing scripts to turn raw data from (../raw) into
