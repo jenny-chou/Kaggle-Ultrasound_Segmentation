@@ -8,6 +8,7 @@ from skimage.transform import resize
 
 RESIZED_ROW = 128
 RESIZED_COL = 128
+CHANNEL = 1
 
 
 def unzip_dataset(zipfile_fpath, destination_path):
@@ -58,10 +59,11 @@ def resize_imgs(fpaths):
 
     Returns: resized images
     """
-    resized_imgs = np.ndarray([len(fpaths), RESIZED_ROW, RESIZED_COL, 1])
+    resized_imgs = np.ndarray([len(fpaths), RESIZED_ROW, RESIZED_COL, CHANNEL])
     for idx in range(len(fpaths)):
         orig_img = np.array(imread(fpaths[idx]), dtype=np.uint8)
-        resized_imgs[idx] = resize(orig_img, [RESIZED_ROW, RESIZED_COL, 1])
+        resized_imgs[idx] = resize(orig_img, 
+                                   [RESIZED_ROW, RESIZED_COL, CHANNEL])
         
         # print progress
         if idx % 120 == 0:
