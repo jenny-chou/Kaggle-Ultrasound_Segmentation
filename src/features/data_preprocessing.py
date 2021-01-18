@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import numpy as np
-import pandas as pd
 from zipfile import ZipFile
 from skimage.io import imread
 from skimage.transform import resize
